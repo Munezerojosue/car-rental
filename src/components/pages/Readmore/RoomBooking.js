@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './WeOfferCars.css';
 
-function HotelBk() {
+function RoomBooking() {
   const [formData, setFormData] = useState({
     startDate: '',
     endDate: '',
@@ -148,4 +148,4 @@ function HotelBk() {
   );
 }
 
-export default HotelBk;
+export default RoomBooking;

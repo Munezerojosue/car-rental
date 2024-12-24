@@ -18,6 +18,7 @@ import FlyBaloon from './components/pages/Readmore/FlyBaloon'
 import Prius from './components/pages/Readmore/Prius'
 import Hiking from './components/pages/Readmore/Hiking'
 import HotelReservation from './components/pages/Readmore/HotelReservation'
+import RoomBooking from './components/pages/Readmore/RoomBooking'
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route  path="/Prius" element={<Prius/>}/>
         <Route  path="/Hiking" element={<Hiking/>}/>
         <Route  path="/HotelReservation" element={<HotelReservation/>}/>
+        <Route  path="/RoomBooking" element={<RoomBooking/>}/>
 
       </Routes>
       
