@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .we-offer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #333;
+    color: white; /* Gold */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .site-title {
+    font-size: 1.5rem;
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header li {
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .booking-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .booking-section form label {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .booking-section form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .get-quote-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #190150; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .get-quote-btn:hover {
+    background-color: #2f019a;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    margin-bottom: 20px;
+  }
+  
+  .car-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .car-images img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin: 5px 0;
+  }
+  
+  .app-download-btn,
+  .subscribe-btn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .app-download-btn:hover,
+  .subscribe-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+  }
+  
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .footer > div {
+    flex-basis: 30%;
+    margin-bottom: 1rem;
+  }
+  .contact-form h3{
+    color: #333;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-btn,
+  .app-download-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn {
+    background-color: #190150;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2f019a;
+  }
+  
+  .app-download-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .app-download-btn:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .footer > div {
+      flex-basis: 100%;
+    }
+  }
+  .joo{
+    color: #333;
+
+  }

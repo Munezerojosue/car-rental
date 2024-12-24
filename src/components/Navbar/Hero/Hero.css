@@ -1,0 +1,29 @@
+.Hero-text{
+    text-align: center;
+    max-width: 800px;
+}
+
+.Hero-text h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.Hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+
+}
+.btn{
+    background-color: white;
+    color:purple ;
+    padding: 12px 23px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+
+
+}

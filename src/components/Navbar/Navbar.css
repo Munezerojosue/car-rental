@@ -1,0 +1,90 @@
+/* Navbar container */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    box-shadow: none; /* Remove shadow */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+  }
+  
+  /* Show the navbar */
+  .navbar-container.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Hide the navbar */
+  .navbar-container.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  /* Logo styling */
+  .navbar-logo .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Navigation links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white; /* White text color */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Hover color */
+  }
+  
+  /* Button styles */
+  .button {
+    border: #011806;
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .button1 {
+    /* background-color: #28a745; Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button1:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+  }
+  

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .jo {
+    display: flex;
+    min-height: 100vh; /* Set minimum height to viewport height */
+    width: 100%; /* Full width */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevent repeating background */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    background-image: linear-gradient(
+        rgba(8, 0, 58, 0.7),
+        rgba(8, 0, 58, 0.7)
+      ),
+      url(./Images/R.jpg); /* Overlay gradient on the background image */
+    background-position: center; /* Center the image */
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
