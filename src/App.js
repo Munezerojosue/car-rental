@@ -20,17 +20,11 @@ import Hiking from './components/pages/Readmore/Hiking'
 import HotelReservation from './components/pages/Readmore/HotelReservation'
 import RoomBooking from './components/pages/Readmore/RoomBooking'
 
-
 function App() {
   return (
     <div className='jo'>
 
-     
-    
       <Navbar/>
-      
-
-     
       
       <Routes>
         <Route  path='/'  element={<Home/>}/>
