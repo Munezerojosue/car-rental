@@ -1,9 +1,28 @@
+/* Page description styling */
+.page-description {
+  text-align: center;
+  margin-bottom: 50px; /* Space below description */
+}
+
+.page-description h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.page-description p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 800px; /* Limit the width of the text */
+}
+
 /* Card Container Design */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 cards per row */
   gap: 30px; /* Space between cards */
-  padding: 200px 20px 20px; /* Add padding at the top and sides */
+  padding: 0 20px 20px; /* Adjust padding for top */
   justify-items: center; /* Center the cards horizontally */
 }
 
@@ -15,12 +34,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 300px; /* Fixed width for cards */
-  height: 350px; /* Reduced card height */
+  height: 350px; /* Card height */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden; /* Avoid overflow of image or text */
+  overflow: hidden;
   
   /* Start hidden for animation */
   opacity: 0;
@@ -68,3 +87,104 @@
 .card .btn:hover {
   background-color: #0056b3;
 }
+
+/* Responsive Styles */
+
+/* For tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Reduce space between cards */
+    padding: 150px 15px 15px; /* Adjust padding */
+  }
+
+  .card {
+    max-width: 250px; /* Reduce card width */
+    height: 320px; /* Adjust card height */
+  }
+
+  .card h2 {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+
+  .card .btn {
+    width: 60%; /* Adjust button width */
+  }
+}
+
+/* For phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 15px; /* Further reduce space between cards */
+    padding: 100px 10px 10px; /* Adjust padding */
+  }
+
+  .card {
+    max-width: 200px; /* Smaller card width */
+    height: 300px; /* Adjust card height */
+  }
+
+  .card h2 {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .card .btn {
+    width: 70%; /* Narrower button */
+  }
+}
+
+/* For small phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 card per row */
+    gap: 10px; /* Minimized gap */
+    padding: 80px 5px 5px; /* Adjust padding */
+  }
+
+  .card {
+    max-width: 100%; /* Full width card */
+    height: auto; /* Flexible height */
+  }
+
+  .card img {
+    height: auto; /* Adjust image height */
+  }
+
+  .card h2 {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .card .btn {
+    width: 80%; /* Wider button for single card layout */
+  }
+}
+
+
+
+
+
+
+/* Page description styling */
+.page-description {
+  text-align: center;
+  margin-top: 50px; /* Add space at the top */
+  margin-bottom: 50px; /* Space below description */
+  color: white; /* Set text color to white */
+
+  padding: 20px; /* Add some padding around the description */
+}
+
+.page-description h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.page-description p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 800px; /* Limit the width of the text */
+}
+
+
+

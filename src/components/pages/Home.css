@@ -29,7 +29,8 @@
 
 .hero-text p {
   max-width: 700px;
-  margin: 10px auto 20px;
+  margin: 20px  20px;
+  padding-bottom: 30px;
   line-height: 1.4;
   animation: slowReveal 1s ease-out 0.9s both; /* Faster reveal */
 }
@@ -50,4 +51,25 @@
   margin-left: 270px;
   margin-top: 20px;
   animation: slowReveal 1s ease-out 1.5s both; /* Faster reveal */
+}
+
+
+
+.Hero-text-btn {
+  display: inline-block;
+  background-color: white; /* Background color */
+  color: rgb(35, 35, 94); /* Text color */
+  padding: 12px 30px; /* Adjust padding for size */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Bold text */
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  width: 200px; /* Set a fixed length */
+  text-decoration: none; /* Remove underline */
+}
+
+.Hero-text-btn:hover {
+  background-color: darkblue; /* Darker shade on hover */
+  color: white; /* Keep text white */
 }

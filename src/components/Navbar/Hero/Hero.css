@@ -1,22 +1,70 @@
-.Hero-text{
+.Hero-text {
     text-align: center;
     max-width: 800px;
-}
-
-.Hero-text h1{
+    padding: 20px; /* Add padding to prevent content from touching edges */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .Hero-text {
+      padding: 15px; /* Reduce padding for smaller screens */
+      margin: 0 20px; /* Add left and right margins */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Hero-text {
+      padding: 10px; /* Further reduce padding for phones */
+      margin: 0 15px; /* Adjust margins for phone screens */
+    }
+  }
+  
+  .Hero-text h1 {
     font-size: 50px;
     font-weight: 600;
-}
-
-.Hero-text p{
+    margin: 20px 0;
+  }
+  
+  /* Responsive font size for h1 */
+  @media (max-width: 768px) {
+    .Hero-text h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Hero-text h1 {
+      font-size: 28px;
+    }
+  }
+  
+  .Hero-text p {
     max-width: 700px;
     margin: 10px auto 20px;
     line-height: 1.4;
-
-}
-.btn{
+    font-size: 18px;
+    padding: 0 10px; /* Add inner padding for text content */
+  }
+  
+  /* Responsive adjustments for p */
+  @media (max-width: 768px) {
+    .Hero-text p {
+      font-size: 16px;
+      padding: 0 15px; /* Adjust padding for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Hero-text p {
+      font-size: 14px;
+      padding: 0 10px; /* Adjust padding for phones */
+    }
+  }
+  
+  .btn {
     background-color: white;
-    color:purple ;
+    color: purple;
     padding: 12px 23px;
     font-size: 16px;
     border-radius: 30px;
@@ -24,13 +72,14 @@
     border: 0;
     outline: 0;
     display: inline-flex;
-
-
-}
-
-.Hero-text .btn {
-    display: inline-block;
-    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hero button specific styles */
+  .Hero-text .btn {
     background-color: #007BFF; /* Button background color */
     color: #fff; /* Button text color */
     text-decoration: none; /* Remove underline */
@@ -39,9 +88,26 @@
     font-weight: 600;
     text-align: center;
     transition: background-color 0.3s ease-in-out;
-}
-
-.Hero-text .btn:hover {
+  }
+  
+  /* Hover effect */
+  .Hero-text .btn:hover {
     background-color: #0056b3; /* Darker shade for hover effect */
     color: #fff;
-}
+  }
+  
+  /* Responsive button styles */
+  @media (max-width: 768px) {
+    .Hero-text .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Hero-text .btn {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  

@@ -1,4 +1,4 @@
-.containerr{
+.containerr {
     position: relative;
     width: 420px;
     height: 500px;
@@ -8,26 +8,28 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0, .2);
     color: #fff;
+    margin: auto;
+    padding: 10px;
 }
 
-.containerr .form-boxr{
+.containerr .form-boxr {
     width: 100%;
     padding: 40px;
 }
 
-form h1{
+form h1 {
     font-size: 36px;
     text-align: center;
 }
-form .input-boxr{
+
+form .input-boxr {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
-
 }
 
-.input-boxr input{
+.input-boxr input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -38,41 +40,42 @@ form .input-boxr{
     font-size: 16px;
     color: #ffff;
     padding: 20px 45px 20px;
-
 }
-.input-boxr input::placeholder{
+
+.input-boxr input::placeholder {
     color: #fff;
 }
 
-.input-boxr .icon{
+.input-boxr .icon {
     position: absolute;
     right: 20px;
     top: 50%;
     translate: 0 -50%;
     font-size: 16px;
-
 }
 
-form .remember-forgotr{
+form .remember-forgotr {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
-.remember-forgotr label input{
+
+.remember-forgotr label input {
     accent-color: #fff;
     margin-right: 4px;
 }
-.remember-forgotr a{
+
+.remember-forgotr a {
     color: #fff;
     text-decoration: none;
 }
 
-.remember-forgotr a:hover{
+.remember-forgotr a:hover {
     text-decoration: underline;
 }
 
-form .btnn{
+form .btnn {
     width: 100%;
     height: 45px;
     background: #fff;
@@ -85,21 +88,85 @@ form .btnn{
     color: #333;
     font-weight: 700;
 }
-form .register-linkr{
-    font-size: 14.px;
+
+form .register-linkr {
+    font-size: 14px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.register-linkr p a{
+.register-linkr p a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
-.register-linkr pa a:hover{
-    text-decoration: underline;
 
+.register-linkr pa a:hover {
+    text-decoration: underline;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containerr {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    form h1 {
+        font-size: 28px;
+    }
 
+    .input-boxr input {
+        font-size: 14px;
+        padding: 15px 30px;
+    }
 
+    form .remember-forgotr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remember-forgotr a {
+        margin-top: 5px;
+    }
+
+    form .btnn {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    form .register-linkr {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerr {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    form h1 {
+        font-size: 24px;
+    }
+
+    .input-boxr input {
+        font-size: 12px;
+        padding: 10px 25px;
+    }
+
+    form .remember-forgotr {
+        font-size: 12px;
+    }
+
+    form .btnn {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    form .register-linkr {
+        font-size: 10px;
+    }
+}

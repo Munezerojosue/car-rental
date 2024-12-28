@@ -1,4 +1,5 @@
-.wrapper{
+/* Wrapper Styles */
+.wrapper {
     position: relative;
     width: 420px;
     height: 450px;
@@ -8,72 +9,83 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0, .2);
     color: #fff;
-    
-}
-
-.wrapper .form-box{
+    padding: 20px;
+    /* Ensure the wrapper is centered */
+    margin: auto;
+  }
+  
+  /* Form Box */
+  .wrapper .form-box {
     width: 100%;
     padding: 40px;
-}
-
-form h1{
+  }
+  
+  /* Heading Styles */
+  form h1 {
     font-size: 36px;
     text-align: center;
-}
-form .input-box{
+  }
+  
+  /* Input Box */
+  form .input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
-
-}
-
-.input-box input{
+  }
+  
+  /* Input Field Styles */
+  .input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255,255,255, .1);
+    border: 2px solid rgba(255, 255, 255, .1);
     border-radius: 40px;
     font-size: 16px;
-    color: #ffff;
-    padding: 20px 45px 20px;
-
-}
-.input-box input::placeholder{
     color: #fff;
-}
-
-.input-box .icon{
+    padding: 20px 45px 20px;
+  }
+  
+  /* Input Placeholder */
+  .input-box input::placeholder {
+    color: #fff;
+  }
+  
+  /* Input Icon */
+  .input-box .icon {
     position: absolute;
     right: 20px;
     top: 50%;
-    translate: 0 -50%;
+    transform: translateY(-50%);
     font-size: 16px;
-
-}
-
-form .remember-forgot{
+  }
+  
+  /* Remember & Forgot Link */
+  form .remember-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
-}
-.remember-forgot label input{
+  }
+  
+  .remember-forgot label input {
     accent-color: #fff;
     margin-right: 4px;
-}
-.remember-forgot a{
+  }
+  
+  .remember-forgot a {
     color: #fff;
     text-decoration: none;
-}
-
-.remember-forgot a:hover{
+  }
+  
+  .remember-forgot a:hover {
     text-decoration: underline;
-}
-
-form button{
+  }
+  
+  /* Submit Button */
+  form button {
     width: 100%;
     height: 45px;
     background: #fff;
@@ -85,24 +97,86 @@ form button{
     font-size: 16px;
     color: #333;
     font-weight: 700;
-    
-}
-form .registered-link{
-    font-size: 14.px;
+  }
+  
+  /* Registered Link */
+  form .registered-link {
+    font-size: 14px;
     text-align: center;
     margin: 20px 0 15px;
-    
-}
-
-.register-link p a{
+  }
+  
+  .register-link p a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-}
-.register-link pa a:hover{
+  }
+  
+  .register-link p a:hover {
     text-decoration: underline;
-
-}
-
-
-
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and smaller laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .wrapper {
+      width: 350px; /* Reduce width */
+      height: 400px; /* Adjust height */
+    }
+  
+    form h1 {
+      font-size: 28px; /* Smaller heading */
+    }
+  
+    .input-box input {
+      font-size: 14px; /* Adjust input font size */
+    }
+  
+    form button {
+      font-size: 14px; /* Adjust button font size */
+    }
+  }
+  
+  /* For phones (max-width: 768px) */
+  @media (max-width: 768px) {
+    .wrapper {
+      width: 300px; /* Reduce width further */
+      height: auto; /* Flexible height */
+      padding: 15px; /* Adjust padding */
+    }
+  
+    form h1 {
+      font-size: 24px; /* Smaller heading */
+    }
+  
+    .input-box input {
+      font-size: 14px; /* Smaller input font size */
+    }
+  
+    form button {
+      font-size: 14px; /* Smaller button font size */
+    }
+  }
+  
+  /* For small phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .wrapper {
+      width: 100%; /* Full width */
+      padding: 10px; /* Minimize padding */
+      height: auto; /* Allow the height to adjust automatically */
+    }
+  
+    form h1 {
+      font-size: 20px; /* Smaller heading */
+    }
+  
+    .input-box input {
+      font-size: 14px; /* Smaller input font size */
+    }
+  
+    form button {
+      font-size: 14px; /* Smaller button font size */
+    }
+  }
+  

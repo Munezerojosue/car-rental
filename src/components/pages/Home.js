@@ -17,9 +17,10 @@ function Home() {
   
     </>
   
+    <a href="/About" className="btn Hero-text-btn">Explore more</a>
 
-        <button className='btn4'>explore more</button>
-        {/* <  FaLongArrowAltRight className='arrow'/> */}
+        
+        
 
       </div>
 
